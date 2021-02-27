@@ -15,8 +15,13 @@ public class BalancedBracketProblem {
         this.str = str;
     }
 
+    public BalancedBracketProblem() {
+
+    }
+
     public void check(){
         StackOfBracket obj = new StackOfBracket();
+        obj.StackOfBracket(str.length());
         char array[] = str.toCharArray();
         for (int i = 0; i < array.length; i++) {
             if(array[i] == '(' || array[i] == '[' || array[i] == '{'){
@@ -31,10 +36,13 @@ public class BalancedBracketProblem {
                         || array[i] == ']' && chr == '['
                         || array[i] == '}' && chr == '{'){
                     obj.pop();
-                }else{
-
                 }
             }
+        }
+        if(obj.isEmpty()){
+            System.out.println("Bracket Balanced");
+        }else{
+            System.out.println("Not Balanced");
         }
     }
 }

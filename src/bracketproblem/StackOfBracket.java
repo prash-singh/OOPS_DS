@@ -4,7 +4,7 @@ public class StackOfBracket {
     int top;
     int size;
     char arr[];
-    public StackOfBracket(int size){
+    public void StackOfBracket(int size){
         top =-1;
         this.size = size;
         arr = new char[size];
