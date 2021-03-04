@@ -9,8 +9,8 @@ public class StackByLinkedList {
     }
 
     public void pop(){
-        if(top == null){
-            System.out.println("Element poped" + top.data);
+        if(top != null){
+            System.out.println("Element popped " + top.data);
             top = top.next;
         }else{
             System.out.println("List is empty");

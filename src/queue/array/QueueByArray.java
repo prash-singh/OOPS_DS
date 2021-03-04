@@ -42,7 +42,8 @@ public class QueueByArray {
 
     public void deQueue(){
         if(!isQueueEmpty()){
-            System.out.println(arr[beginning]);
+            System.out.println("deQueued element " + arr[beginning]);
+            arr[beginning] =0;
             beginning++;
         } else{
             System.out.println("Queue is empty");
@@ -61,7 +62,7 @@ public class QueueByArray {
     }
 
     public void displayQueue(){
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = beginning; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
     }

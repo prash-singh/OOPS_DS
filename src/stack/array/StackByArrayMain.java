@@ -14,13 +14,9 @@ public class StackByArrayMain {
         obj.push(40);
         obj.push(50);
         obj.push(60);
-        obj.display();
-        obj.pop();
-        obj.pop();
-        obj.pop();
-        obj.pop();
 
-        obj.display();
+        obj.pop();
+        //obj.display();
 
 
     }

@@ -5,12 +5,8 @@ public class Node {
     Node next;
     int priority;
 
-    public void character(char ch) {
+    public Node(char ch) {
         this.ch = ch;
         priority = (int) ch;
-    }
-
-    public Node() {
-
     }
 }

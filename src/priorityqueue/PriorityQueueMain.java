@@ -1,6 +1,6 @@
 package priorityqueue;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class PriorityQueueMain
 {
@@ -10,9 +10,8 @@ public class PriorityQueueMain
         System.out.println("Enter the String");
         String str = scn.next();
         for (int i = 0; i <str.length(); i++) {
-            Node n1 = new Node();
             char data = str.charAt(i);
-            n1.character(data);
+            Node n1 = new Node(data);
             obj.enqueue(n1);
         }
         obj.display();

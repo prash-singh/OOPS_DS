@@ -36,7 +36,7 @@ public class StackByArray {
             arr[top]=0;
             top=top-1;
         }else{
-            System.out.println("queue.queue.array is empty");
+            System.out.println("array is empty");
         }
     }
     public void display(){

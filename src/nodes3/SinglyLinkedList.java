@@ -8,7 +8,6 @@ public class SinglyLinkedList {
     Node previous;
     public SinglyLinkedList(){
         head = null;
-
     }
 
     public void insert(Node newnode){
